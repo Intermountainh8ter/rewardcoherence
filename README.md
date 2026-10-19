@@ -21,6 +21,8 @@ Kendall's tau-b between the reward model's scores of the T=0.3 responses and of 
 
 <!-- RESULTS:END -->
 
+**Reading the first row.** The reward model is coherent by the section 3 gate (tau 0.914, lower bound 0.846) and flagged by the section 4 gate because the length-only ranker's interval (0.98 [0.94, 1.00]) reaches the model's lower bound. The flag fires as pre-registered. One caveat belongs next to it: the length-only tau is high because each prompt draws similar-length responses at both temperatures, so the gate as written cannot tell a reward model that measures length from a fixture whose lengths are stable across arms. The verdict stands; the gate's blind spot is recorded in [docs/THREATS_TO_VALIDITY.md](docs/THREATS_TO_VALIDITY.md) and a stronger gate (partial tau controlling for length) would be a new pre-registered section, not a rewrite of this one.
+
 Rendered by `rewardcoherence report` from `results/*.json`. The fixture is committed under `fixtures/` with its hash; generated responses stay out of the repository (their SHA-256, byte length and token count travel with the scores). [docs/PREREGISTRATION.md](docs/PREREGISTRATION.md) amendment 1 fixed the reading of the tau, the generator, the reward model and the arms before the first score was computed.
 
 ## Live audit, step by step
