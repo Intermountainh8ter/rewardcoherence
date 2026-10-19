@@ -85,3 +85,28 @@ fixtures we never pool; each fixture is its own row.
 - **Tau-b vs rank correlation of policy choices.** Tau-b of raw scores and
   tau-b of policy choices under rejection sampling can differ; we report
   the raw-score tau only.
+
+---
+
+## Amendment 1 (2026-10-19, before any score was computed): the first live audit
+
+- **Reading of section 3.** For each of the N prompts in a fixture, the generator produces one
+  response at T = 0.3 and one at T = 1.0 (one sample each, seeded per prompt, max 256 tokens).
+  The reward model scores every (prompt, response) pair. `tau_T` is Kendall's tau-b between the
+  vector of N scores of the T = 0.3 responses and the vector of N scores of the T = 1.0
+  responses, paired by prompt. One tau per fixture; the 95% interval is a percentile bootstrap
+  over prompts, 2,000 resamples, seed 42. Degenerate rankers (section 4) are computed on the same
+  pairing: `random` is tau between two seeded permutations, `length-only` is tau between the byte
+  lengths of the two arms' responses, `token-count` the same with whitespace token counts.
+- **Reward model.** `OpenAssistant/reward-model-deberta-v3-large-v2` (sequence classification,
+  scalar logit as the score), run with transformers on CPU in float32. Its preference-pair
+  training data is public (Anthropic HH-RLHF, OpenAssistant, SHP, WebGPT, summarize-from-feedback
+  per its model card).
+- **Generator.** Qwen3-4B-Instruct-2507, Q8_0 GGUF, served by llama.cpp `llama-server` with its
+  embedded chat template, four slots. Its outputs are not in that training data: the model
+  postdates every set listed.
+- **Fixture.** `capability-100`: the 100 benign task prompts of refusalscope's capability suite
+  (locally authored in October 2026, never published as a preference dataset), as single-turn
+  user messages. Committed under `fixtures/` with its SHA-256.
+- **What is not claimed.** One reward model, one generator, one fixture, one temperature pair.
+  Generator identity and prompt source (section 1 (b), (c)) are not varied in this audit.
