@@ -9,6 +9,8 @@
 //! We measure self-agreement with Kendall's tau-b between two rankings
 //! of the same N items. See `docs/PREREGISTRATION.md` for the full plan.
 
+pub mod live;
+
 use rand::SeedableRng;
 use rand_pcg::Pcg64Mcg;
 

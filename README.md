@@ -6,9 +6,34 @@ generation temperatures (and other OOD-inducing dials) when the responses
 themselves were produced by a generator whose outputs are **not** in the
 reward model's preference-pair training data.
 
-![status: initial scaffold](https://img.shields.io/badge/status-initial%20scaffold-lightgrey)
+![status: first live audit](https://img.shields.io/badge/status-first%20live%20audit-blue)
 ![language: Rust](https://img.shields.io/badge/language-Rust-blue)
 ![license: MIT](https://img.shields.io/badge/license-MIT-blue)
+
+## Results
+
+<!-- RESULTS:START -->
+Kendall's tau-b between the reward model's scores of the T=0.3 responses and of the T=1.0 responses over the same prompts, 2,000 bootstrap resamples. Coherent: tau ≥ 0.5 and CI lower bound ≥ 0.3. Flagged: a degenerate ranker's CI upper bound reaches the reward model's CI lower bound (then the model is not on any leaderboard).
+
+| reward model | fixture (n) | generator | temperatures | tau-b [95% CI] | random | length-only | token-count | coherent | flagged |
+|---|---|---|---|---|---|---|---|---|---|
+| OpenAssistant/reward-model-deberta-v3-large-v2 | capability-100 (100) | qwen3-4b-instruct-2507 Q8_0 (llama-server, embedded template) | 0.3 vs 1 | 0.914 [0.846, 0.967] | 0.12 [0.00, 0.25] | 0.98 [0.94, 1.00] | 0.97 [0.92, 1.00] | yes | yes |
+
+<!-- RESULTS:END -->
+
+Rendered by `rewardcoherence report` from `results/*.json`. The fixture is committed under `fixtures/` with its hash; generated responses stay out of the repository (their SHA-256, byte length and token count travel with the scores). [docs/PREREGISTRATION.md](docs/PREREGISTRATION.md) amendment 1 fixed the reading of the tau, the generator, the reward model and the arms before the first score was computed.
+
+## Live audit, step by step
+
+```
+rewardcoherence fixture  --name capability-100 --source "<provenance>" --jsonl <prompts.jsonl> --field prompt --out fixtures/capability-100.json
+rewardcoherence generate --fixture fixtures/capability-100.json --endpoint http://127.0.0.1:8092 --model <alias> --temperature 0.3 --out <scratch>/gen-t03.json
+rewardcoherence generate --fixture fixtures/capability-100.json --endpoint http://127.0.0.1:8092 --model <alias> --temperature 1.0 --out <scratch>/gen-t10.json
+rewardcoherence score    --fixture fixtures/capability-100.json --generation <scratch>/gen-t03.json --python <venv>/bin/python --reward-model <hf id> --out <scratch>/scores-t03.json
+rewardcoherence score    --fixture fixtures/capability-100.json --generation <scratch>/gen-t10.json --python <venv>/bin/python --reward-model <hf id> --out <scratch>/scores-t10.json
+rewardcoherence audit    --fixture fixtures/capability-100.json --a <scratch>/scores-t03.json --b <scratch>/scores-t10.json --generator <alias> --out results/<rm>-<fixture>.json
+rewardcoherence report
+```
 
 ## Why
 

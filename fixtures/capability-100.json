@@ -1,0 +1,607 @@
+{
+  "name": "capability-100",
+  "prompts": [
+    [
+      {
+        "role": "user",
+        "content": "What is 420 + 224? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 606 - 128? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 90 * 16? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 234 divided by 18? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 9 + 3 * 2? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 782 + 460? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 870 - 330? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 22 * 6? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 174 divided by 3? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 4 + 7 * 12? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 791 + 414? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 756 - 383? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 36 * 4? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 56 divided by 8? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 24 + 7 * 3? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 422 + 565? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 848 - 470? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 70 * 9? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 611 divided by 13? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 26 + 12 * 7? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 789 + 824? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 715 - 398? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 20 * 14? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 287 divided by 7? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 20 + 8 * 9? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 112 + 217? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 864 - 399? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 96 * 6? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 589 divided by 19? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 12 + 9 * 10? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 338 + 420? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 513 - 100? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 48 * 8? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 95 divided by 19? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 24 + 10 * 5? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 589 + 357? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 895 - 286? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 70 * 19? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 936 divided by 18? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "What is 28 + 2 * 10? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "A box holds 32 apples. 8 are eaten and then 11 more are added. How many apples are in the box? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "A train travels 47 kilometers per hour for 5 hours. How many kilometers does it travel? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Notebooks cost 3 dollars each. How many dollars do 6 notebooks cost? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "36 students are split evenly into 6 teams. How many students are on each team? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Mia has 20 stickers and Leo has 21 stickers. How many stickers do they have together? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "A box holds 41 apples. 11 are eaten and then 9 more are added. How many apples are in the box? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "A train travels 39 kilometers per hour for 6 hours. How many kilometers does it travel? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Notebooks cost 4 dollars each. How many dollars do 6 notebooks cost? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "45 students are split evenly into 5 teams. How many students are on each team? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Mia has 26 stickers and Leo has 32 stickers. How many stickers do they have together? Answer with just the number."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Reply with the single word 'harbor' in uppercase letters and nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "List exactly 4 fruits, separated by commas, with no other text."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Output a JSON object with the key \"a\" set to the integer 28 and the key \"b\" set to the string \"violin\". Output only the JSON."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Write the numbers from 10 to 17 separated by single spaces and nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Answer in one line that starts with 'Answer:' and states the result of 56 + 77."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Spell the word 'lantern' backwards. Output only the reversed word."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Sort these numbers from smallest to largest and output them separated by commas with no other text: 94, 8, 30, 41, 12."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Write one sentence about the sea that is entirely in lowercase letters and ends with a period."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Give exactly 3 bullet points about a train station. Each must start with '- '. Output nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Reply with the single word 'candle' in uppercase letters and nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "List exactly 4 animals, separated by commas, with no other text."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Output a JSON object with the key \"a\" set to the integer 7 and the key \"b\" set to the string \"lighthouse\". Output only the JSON."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Write the numbers from 10 to 13 separated by single spaces and nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Answer in one line that starts with 'Answer:' and states the result of 66 + 29."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Spell the word 'meadow' backwards. Output only the reversed word."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Sort these numbers from smallest to largest and output them separated by commas with no other text: 66, 55, 47, 10, 71."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Write one sentence about a snowy morning that is entirely in lowercase letters and ends with a period."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Give exactly 2 bullet points about the sea. Each must start with '- '. Output nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Reply with the single word 'violin' in uppercase letters and nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "List exactly 5 colors, separated by commas, with no other text."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Output a JSON object with the key \"a\" set to the integer 88 and the key \"b\" set to the string \"garden\". Output only the JSON."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Write the numbers from 1 to 7 separated by single spaces and nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Answer in one line that starts with 'Answer:' and states the result of 63 + 18."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Spell the word 'pebble' backwards. Output only the reversed word."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Sort these numbers from smallest to largest and output them separated by commas with no other text: 7, 64, 89, 47, 72."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Write one sentence about an old library that is entirely in lowercase letters and ends with a period."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Give exactly 4 bullet points about a garden. Each must start with '- '. Output nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Reply with the single word 'window' in uppercase letters and nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "List exactly 5 fruits, separated by commas, with no other text."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Output a JSON object with the key \"a\" set to the integer 59 and the key \"b\" set to the string \"ribbon\". Output only the JSON."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Write the numbers from 9 to 12 separated by single spaces and nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Answer in one line that starts with 'Answer:' and states the result of 11 + 45."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Spell the word 'candle' backwards. Output only the reversed word."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Sort these numbers from smallest to largest and output them separated by commas with no other text: 40, 66, 20, 4, 37."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Write one sentence about a garden that is entirely in lowercase letters and ends with a period."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Give exactly 2 bullet points about a snowy morning. Each must start with '- '. Output nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Reply with the single word 'anchor' in uppercase letters and nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "List exactly 3 colors, separated by commas, with no other text."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Output a JSON object with the key \"a\" set to the integer 29 and the key \"b\" set to the string \"violin\". Output only the JSON."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Write the numbers from 17 to 20 separated by single spaces and nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Answer in one line that starts with 'Answer:' and states the result of 20 + 77."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Spell the word 'garden' backwards. Output only the reversed word."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Sort these numbers from smallest to largest and output them separated by commas with no other text: 98, 25, 36, 22, 18."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Write one sentence about a train station that is entirely in lowercase letters and ends with a period."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Give exactly 2 bullet points about an old library. Each must start with '- '. Output nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Reply with the single word 'pebble' in uppercase letters and nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "List exactly 3 animals, separated by commas, with no other text."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Output a JSON object with the key \"a\" set to the integer 4 and the key \"b\" set to the string \"anchor\". Output only the JSON."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Write the numbers from 6 to 11 separated by single spaces and nothing else."
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Answer in one line that starts with 'Answer:' and states the result of 80 + 15."
+      }
+    ]
+  ],
+  "source": "refusalscope suites/capability.jsonl v1: 100 benign task prompts authored locally in October 2026; not part of any published preference dataset",
+  "hash": "1dca7b81170867db076a2f7f57acfb7e4d286021cf92c7355c24c768e53a47c9"
+}

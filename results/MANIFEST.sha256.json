@@ -1,0 +1,10 @@
+{
+  "n_files": 2,
+  "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+  "sha256": {
+    "fixtures/capability-100.json": "fe2d50425c0a14b6225610e960be218c0653c60c8302cf25f89aa6226b5ebee9",
+    "results/oasst-deberta-v3-large-v2-capability-100.json": "a44632e5b61e05fcceab8cdcbfe5f610cc2e05cf31590bc2244b7dc52f943bf4"
+  },
+  "tool": "bench-report 0.1.0",
+  "unix_time": 1792427446
+}

@@ -1,0 +1,52 @@
+{
+  "tool": "rewardcoherence 0.0.1",
+  "unix_time": 1792427421,
+  "fixture": "capability-100",
+  "fixture_hash": "1dca7b81170867db076a2f7f57acfb7e4d286021cf92c7355c24c768e53a47c9",
+  "n": 100,
+  "generator": "qwen3-4b-instruct-2507 Q8_0 (llama-server, embedded template)",
+  "temperatures": [
+    0.3,
+    1.0
+  ],
+  "reward_model": "OpenAssistant/reward-model-deberta-v3-large-v2",
+  "stack": "transformers 5.20.1 / torch 2.9.1+rocm6.4",
+  "boot_iters": 2000,
+  "seed": 42,
+  "reward_model_tau": {
+    "ranker": "reward model",
+    "tau": 0.9143434343434343,
+    "ci": [
+      0.8464058980135163,
+      0.966952264381885
+    ]
+  },
+  "degenerate": [
+    {
+      "ranker": "random",
+      "tau": 0.12323232323232323,
+      "ci": [
+        0.0030656039239730227,
+        0.2544788273615635
+      ]
+    },
+    {
+      "ranker": "length-only",
+      "tau": 0.9781301839115282,
+      "ci": [
+        0.9424252773459468,
+        0.9978380477555793
+      ]
+    },
+    {
+      "ranker": "token-count",
+      "tau": 0.9698238144184902,
+      "ci": [
+        0.9184406276380964,
+        0.9987244892767966
+      ]
+    }
+  ],
+  "coherent": true,
+  "flagged": true
+}
